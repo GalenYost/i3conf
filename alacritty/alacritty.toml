@@ -1,0 +1,45 @@
+[font]
+normal = { family = "Iosevka Nerd Font", style = "Regular" }
+size = 19
+
+[general]
+live_config_reload = true
+
+[mouse]
+hide_when_typing = true
+
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "Never"
+
+[terminal.shell]
+program = "/usr/bin/bash"
+
+[window]
+opacity = 1.0
+padding = { x = 5, y = 0 }
+
+[colors.primary]
+background = '#060606'
+
+[colors.normal]
+black = '#242424'
+red = '#F62B5A'
+green = '#47B413'
+yellow = '#E3C401'
+blue = '#24ACD4'
+magenta = '#F2AFFD'
+cyan = '#13C299'
+white = '#E6E6E6'
+
+[colors.bright]
+black = '#616161'
+red = '#FF4D51'
+green = '#35D450'
+yellow = '#E9E836'
+blue = '#5DC5F8'
+magenta = '#FEABF2'
+cyan = '#24DFC4'
+white = '#FFFFFF'
