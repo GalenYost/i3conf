@@ -7,6 +7,9 @@ exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --rate 144
 exec --no-startup-id nvidia-settings --load-config-only
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xset s off
+exec --no-startup-id xset s noblank
+exec --no-startup-id xset -dpms
 exec --no-startup-id nm-applet
 
 # window rules
@@ -32,6 +35,8 @@ set $files nautilus
 set $screenshot flameshot gui
 
 bindsym $mod+c kill
+bindsym $mod+Shift+e exec ~/.config/i3/lock.sh
+
 bindsym $mod+Return exec $term
 bindsym $mod+d exec --no-startup-id $menu
 bindsym $mod+f exec --no-startup-id $files
