@@ -1,5 +1,5 @@
 [font]
-normal = { family = "Iosevka Nerd Font", style = "Regular" }
+normal = { family = "MesloLGS Nerd Font", style = "Regular" }
 size = 19
 
 [general]
@@ -15,11 +15,13 @@ unfocused_hollow = false
 blinking = "Never"
 
 [terminal.shell]
-program = "/usr/bin/bash"
+program = "wsl.exe"
+args = ["-d", "Arch", "--cd", "~", "-e", "nu"]
 
 [window]
 opacity = 1.0
-padding = { x = 5, y = 0 }
+padding = { x = 0, y = 0 }
+startup_mode = "Maximized"
 
 [colors.primary]
 background = '#060606'
